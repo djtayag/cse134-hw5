@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Experiments</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <label class="logo">Darryl Tayag</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="https://github.com/djtayag" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/darryltayag" target="_blank">LinkedIn</a></li>
+                <li><a href="res/resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <main>
+            <h1>Experiments</h1>
+            <h3>Playing with other tags</h3>
+
+            <p>Using line breaks within a 'p' tag! <br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> 
+                Vel rerum, delectus sit quisquam ratione hic dolor fugit adipisci aliquid vitae! <br>
+                Recusandae quam quasi rem ratione iste, amet quas tempora veniam?</p>
+        
+            <p>This text is inside a 'p' tag! <span><b>This text is bolded and inside a span tag! It is inline within the 'p' tag</b></span></p>
+            <p>Below is a demonstration of the canvas + script tag</p>
+            <canvas id="canvas-test">Testing canvas tag</canvas>
+        
+            <script>
+                var canvas = document.getElementById("canvas-test");
+                var ctx = canvas.getContext("2d");
+                ctx.moveTo(0, 0);
+                ctx.lineTo(200, 100);
+                ctx.stroke();
+            </script>
+
+            <style>
+                ol {border-style: solid;}
+            </style>
+
+            <ol>
+                <li>This is an example of an <i>ordered list</i> with a <strong>border</strong> around it!</li>
+                <li>Wow</li>
+                <li>Cool</li>
+                <li>Awesome</li>
+            </ol>
+
+            <aside>This aside tag is used for content that is indirectly related to the main content</aside>
+
+            <p>The em tag is like the i tag, they both italicize text! <em>This text is in an em tag.</em> <i>This text is in an i tag</i></p>
+
+            <code>
+                print("Hello world! I am inside a code tag!")
+            </code>
+            
+            <hr>
+
+            <pre>
+            This is a pre tag! Text in this tag is presented exactly as it is written in HTML!
+
+                |\_/|                  
+                | @ @   Woof! 
+                |   <>              _  
+                |  _/\------____ ((| |))
+                |               `--' |   
+            ____|_       ___|   |___.' 
+        /_/_____/____/_______|
+            </pre>
+
+            <hr>
+
+            <picture>
+                <img src="res/images/iloveyogi.png" alt="My dog named Yogi">
+            </picture>
+            <br>
+            <iframe width="300" height="300" src="https://www.youtube.com/embed/1q-BxESrbYI" title="Virtual Dog TV! Videos for Dogs to Prevent Boredom [With ASMR Music]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br>
+
+            <figure>
+                <figcaption>Listen to this dog barking!</figcaption>
+                <audio controls>
+                    <source src="res/mixkit-dog-barking-twice-1.mp3">
+                </audio>
+            </figure>
+
+            <figure>
+                <figcaption>Here's a video of a dog</figcaption>
+                <video height="300" width="300" controls>
+                    <source src="res/dog_video.mp4">
+                </video>
+            </figure>
+
+            <div>This is an example of inline svg tag usage! 
+                <svg width="200" height="200">
+                    <circle cx="100" cy="100" r="90" stroke="red" stroke-width="4" fill="blue" />
+                </svg>
+                This cirle is within the div! :-)
+            </div>
+            
+
+            <br>
+            <br>
+
+            <label for="dog-select">Choose a doggie!:</label>
+            <br>
+            <select id="dog-select">
+                <optgroup label="Big Dog">
+                    <option>Great Dane</option>
+                    <option>German Shepard</option>
+                    <option>Husky</option>
+                </optgroup>
+                <optgroup label="Small Dog">
+                    <option>Shih Tzu</option>
+                    <option>Chihuahua</option>
+                    <option>Yorkie</option>
+                </optgroup>
+            </select>
+
+            <br>
+            <br>
+            <br>
+
+            <p>Below is a form!</p>
+            <form>
+                <fieldset>
+                    <legend>Information</legend>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname">
+                    <p><label for="details">Details:</label></p>
+                    <textarea name="details" id="details" cols="30" rows="10">Text area tag...</textarea>
+                </fieldset>
+                
+            </form>
+
+            <button type="button" onclick="alert('Hello world!')"> Click me!</button>
+
+            <br><br><br>
+
+            <label for="ice-cream-choice">(Testing data list tag) Choose a flavor:</label>
+            <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
+
+            <datalist id="ice-cream-flavors">
+                <option value="Chocolate">
+                <option value="Coconut">
+                <option value="Mint">
+                <option value="Strawberry">
+                <option value="Vanilla">
+            </datalist>
+
+            <br><br><br>
+
+            <details>
+                <summary>Details Tag</summary>
+                Specifies details that the user can open and close on demand.
+            </details>
+
+            <br><br>
+            <hr>
+            <br>
+            <p>There is a template tag right below this but you can't see it because it is hidden!</p>
+
+            <template>
+                <img src="res/images/stock_dog.jpg" alt="stock dog photo" width="100" height="100">
+            </template>
+            <br>
+            <br>
+            <br>
+            <p>table example!</p>
+
+            <table>
+                <colgroup>
+                <col span="1" style="background-color:green">
+                <col style="background-color:yellow">
+                </colgroup>
+                <tr>
+                <th>Course Number</th>
+                <th>Course Title</th>
+                </tr>
+                <tr>
+                <td>CSE 8A</td>
+                <td>Introduction to Programming and Computational Problem-Solving I</td>
+                </tr>
+                <tr>
+                    <td>CSE 100</td>
+                    <td>Advanced Data Structures</td>
+                </tr>
+                <tr>
+                    <td>MATH 183</td>
+                    <td>Statistical Methods</td>
+                </tr>
+            </table>
+        </main>
+
+    <footer>
+        <p>Darryl Tayag</p>
+    </footer>
+</body>
+</html>
