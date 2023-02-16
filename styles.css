@@ -26,8 +26,8 @@
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: monospace;
-    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 21px;
 }
 
 header {
@@ -43,7 +43,7 @@ header {
     color: var(--white);
     font-size: 50pt;
     transition: 0.2s;
-    font-family: 'Lemon Jelly', monospace;
+    font-family: 'Lemon Jelly', sans-serif;
 }
 
 .logo a:hover {
@@ -94,15 +94,30 @@ main {
     align-items: center;
     padding: 0 0 50px;
 }
+
 .about-me img {
     border-radius: 50%;
     width: 250px;
     height: auto;
 }
+
 .about-me div {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+}
+
+.about-me-images img {
+    width: 250px;
+    height: auto;
+}
+
+.about-me-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 0 0 20px;
 }
 
 .work-experience {
@@ -155,4 +170,89 @@ main ul {
 
 footer {
     text-align: center;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 640px) {
+    header {
+        padding: 20px 0px 20px 20px;
+    }
+
+    .logo a {
+        font-size: 40px;
+    }
+
+    .nav-links li a {
+        font-size: 15px;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .about-me img {
+        width: 150px;
+        height: auto;
+    }
+
+    .about-me div {
+        width: 100%;
+    }
+
+    .about-me-images {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .work-experience {
+        flex-direction: column;
+    }
+
+    #innovive {
+        width: 100%;
+    }
+
+    #floor-and-decor {
+        width: 100%;
+    }
+}
+
+/* Tablets and restrictive laptops */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+        padding: 20px 0px 15px 20px;
+    }
+
+    .logo a {
+        font-size: 45px;
+    }
+
+    .nav-links li a {
+        font-size: 22px;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .about-me div {
+        width: 100%;
+    }
+
+    .about-me-images {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .work-experience {
+        flex-direction: column;
+    }
+
+    #innovive {
+        width: 100%;
+    }
+
+    #floor-and-decor {
+        width: 100%;
+    }
 }
