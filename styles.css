@@ -38,6 +38,35 @@ header {
     padding: 30px 10%;
 }
 
+nav .navbar-toggle {
+    display: none;
+    height: min-content;
+    margin: 18px 12px 0 0;
+    cursor: pointer;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ nav .nav-links {
+    transform: translateY(0);
+    z-index: 0;
+}
+
+input:checked ~ nav .navbar-toggle {
+    margin-top: 35px;
+}
+
+nav .navbar-toggle .bar {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 10%;
+    transition: .4s;
+}
+
 .logo a {
     cursor: pointer;
     color: var(--white);
@@ -176,6 +205,22 @@ footer {
 @media screen and (max-width: 640px) {
     header {
         padding: 20px 0px 20px 20px;
+    }
+
+    nav .nav-links {
+        display: grid;
+        position: absolute;
+        background: var(--blue);
+        width: 100%;
+        top: 100px;
+        left: 0;
+        transform: translateY(-100%);
+        z-index: -1;
+        transition: .5s;
+    }
+
+    nav .navbar-toggle {
+        display: grid !important;
     }
 
     .logo a {
