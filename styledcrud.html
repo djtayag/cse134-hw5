@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styledcrud.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Part 3 - Simple CRUD</title>
 </head>
 <body onload="onLoad()">
@@ -40,8 +41,8 @@
             <h1 id="title"></h1>
             <p id="date"></p>
             <p id="summary"></p>
-            <button onclick="editPost(this.parentElement)">Edit</button>
-            <button onclick="deletePost()">Delete</button>
+            <button class="buttons" onclick="editPost(this.parentElement)"><i class="fa-solid fa-pencil"></i></button>
+            <button class="buttons" onclick="deletePost()"><i class="fa-solid fa-trash"></i></button>
 
             <dialog class="dialog" id="edit-dialog">
                 <p><b>Edit Post</b></p>
