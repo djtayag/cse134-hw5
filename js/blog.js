@@ -72,5 +72,6 @@ function deletePost() {
 }
 
 function deleteOK(parent) {
-
+    localStorage.removeItem(parent.children[0].innerHTML);
+    parent.remove();
 }
