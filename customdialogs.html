@@ -9,8 +9,41 @@
 </head>
 <body>
     <h1>Custom Dialogs</h1>
-    <button>Alert</button>
-    <button>Confirm</button>
-    <button>Prompt</button>
+    <button id="alert-btn">Alert</button>
+    <button id="confirm-btn">Confirm</button>
+    <button id="prompt-btn">Prompt</button>
+
+    <br>
+    <br>
+
+    <output id="output"></output>
+
+    <dialog id="alert-dialog">
+        <p>Alert pressed!</p>
+        <form method="dialog">
+            <button>OK</button>
+        </form>
+    </dialog>
+
+    <dialog id="confirm-dialog">
+        <p>Would you like to confirm?</p>
+        <form method="dialog">
+            <button onclick="confirmCancel()">Cancel</button>
+            <button onclick="confirmOK()">OK</button>
+        </form>
+    </dialog>
+
+    <dialog id="prompt-dialog">
+        <p>What is your name?</p>
+        <form method="dialog">
+            <input id="input-text" type="text">
+            <br>
+            <br>
+            <button>Cancel</button>
+            <button onclick="promptOK()">OK</button>
+        </form>
+    </dialog>
+
+    <script type="text/javascript" src="/js/customdialog.js"></script>
 </body>
 </html>
