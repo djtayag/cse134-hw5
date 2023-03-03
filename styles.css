@@ -30,6 +30,10 @@
     font-size: 21px;
 }
 
+body {
+    background-image: url(res/images/beach_wallpaper.jpeg);
+}
+
 header {
     background-color: var(--blue);
     display: flex;
@@ -199,6 +203,7 @@ main ul {
 
 footer {
     text-align: center;
+    padding: 20px;
 }
 
 /* Mobile Devices */
