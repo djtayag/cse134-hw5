@@ -2,6 +2,17 @@ let inputTitle = document.getElementById('enter-title');
 let inputDate = document.getElementById('enter-date');
 let inputSummary = document.getElementById('enter-summary');
 document.getElementById('add-button').addEventListener('click', addPost);
+function onLoad() {
+    for (let i = 0; i < localStorage.length; i++) {
+        let post_deserialized = JSON.parse(localStorage.getItem(localStorage.key(i)));
+        var temp = document.getElementById('template-post').content;
+        var postToAdd = document.importNode(temp, true);
+        postToAdd.getElementById('title').innerHTML = post_deserialized.title;
+        postToAdd.getElementById('date').innerHTML = post_deserialized.date;
+        postToAdd.getElementById('summary').innerHTML = post_deserialized.summary;
+        document.body.appendChild(postToAdd);
+    }
+}
 
 function addPost () {
     if (inputTitle.value == "" || inputDate.value == "" || inputSummary.value == "") {
