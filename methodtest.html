@@ -30,18 +30,30 @@
     </header>
 
     <main>
-        <form action="">
-            <label for="">ID:</label><br>
-            <input class="http-form-input" type="text" id="enter-id"><br><br>
-            <label for="">Article Name:</label><br>
-            <input class="http-form-input" type="text" id="enter-article-name"><br><br>
-            <label for="">Article Body:</label><br>
-            <textarea name="" id="enter-summary" cols="30" rows="5"></textarea><br><br>
+        <form id="form">
+            <label for="article-id">ID:</label><br>
+            <input class="http-form-input" type="text" name="article-id" id="article-id"><br><br>
+
+            <label for="article-name">Article Name:</label><br>
+            <input class="http-form-input" type="text" id="article-name" name="article-name"><br><br>
+
+            <label for="article-body">Article Body:</label><br>
+            <textarea id="article-body" name="article-body" cols="30" rows="5"></textarea><br><br>
+
+            <label for="date">Date:</label>
+            <input class="http-form-input" id="date" name="date" type="text" readonly><br><br>
+
+            <button type="button" id="post-btn" onclick="postData()">postBtn</button>
+            <button type="button" id="get-btn" onclick="getData()">getBtn</button>
+            <button type="button" id="put-btn" onclick="putData()">putBtn</button>
+            <button type="button" id="delete-btn" onclick="deleteData()">deleteBtn</button>
         </form>
-        <button id="post-btn">postBtn</button>
-        <button id="get-btn">getBtn</button>
-        <button id="put-btn">putBtn</button>
-        <button id="delete-btn">deleteBtn</button>
+        
+        <br><br>
+
+        <output id="response"></output>
+
+        <script src="/js/methodtest.js"></script>
     </main>
     
 
