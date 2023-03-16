@@ -49,6 +49,10 @@ nav .navbar-toggle {
     cursor: pointer;
 }
 
+.http-form-input {
+    display: block;
+}
+
 input {
     display: none;
 }
