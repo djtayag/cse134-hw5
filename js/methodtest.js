@@ -1,13 +1,13 @@
-const dateInput = document.getElementById('date');
-const currentDate = new Date();
+let dateInput = document.getElementById('date');
+let currentDate = new Date();
 dateInput.value = currentDate.toString();
 
 function postData() {
-    const currentDate = new Date();
+    let currentDate = new Date();
     dateInput.value = currentDate.toString();
 
-    const form = document.getElementById('form');
-    const data = new FormData(form);
+    let form = document.getElementById('form');
+    let data = new FormData(form);
 
     fetch('https://httpbin.org/post', {
       method: 'POST',
@@ -15,22 +15,22 @@ function postData() {
     })
     .then(response => response.json())
     .then(data => {
-      const output = document.getElementById('response');
+      let output = document.getElementById('response');
       output.innerHTML = "";
     // Create a table element
-    const table = document.createElement('table');
+    let table = document.createElement('table');
         // Iterate over each property of the JSON object
-        for (const key in data) {
+        for (let key in data) {
             if (Object.hasOwnProperty.call(data, key)) {
               // Create a table row for the property
-              const row = document.createElement('tr');
+              let row = document.createElement('tr');
               
               // Create a table cell for the property name
-              const nameCell = document.createElement('td');
+              let nameCell = document.createElement('td');
               nameCell.textContent = key;
               
               // Create a table cell for the property value
-              const valueCell = document.createElement('td');
+              let valueCell = document.createElement('td');
               valueCell.textContent = JSON.stringify(data[key]);
               
               // Add the name and value cells to the row
@@ -55,22 +55,22 @@ function postData() {
     })
     .then(response => response.json())
     .then(data => {
-        const output = document.getElementById('response');
+        let output = document.getElementById('response');
         output.innerHTML = "";
         // Create a table element
-    const table = document.createElement('table');
+    let table = document.createElement('table');
     // Iterate over each property of the JSON object
-    for (const key in data) {
+    for (let key in data) {
         if (Object.hasOwnProperty.call(data, key)) {
           // Create a table row for the property
-          const row = document.createElement('tr');
+          let row = document.createElement('tr');
           
           // Create a table cell for the property name
-          const nameCell = document.createElement('td');
+          let nameCell = document.createElement('td');
           nameCell.textContent = key;
           
           // Create a table cell for the property value
-          const valueCell = document.createElement('td');
+          let valueCell = document.createElement('td');
           valueCell.textContent = JSON.stringify(data[key]);
           
           // Add the name and value cells to the row
@@ -89,11 +89,11 @@ function postData() {
   }
 
 function putData() {
-    const currentDate = new Date();
+    let currentDate = new Date();
     dateInput.value = currentDate.toString();
 
-    const form = document.getElementById('form');
-    const data = new FormData(form);
+    let form = document.getElementById('form');
+    let data = new FormData(form);
 
     fetch('https://httpbin.org/put', {
       method: 'PUT',
@@ -101,22 +101,22 @@ function putData() {
     })
     .then(response => response.json())
     .then(data => {
-      const output = document.getElementById('response');
+      let output = document.getElementById('response');
       output.innerHTML = "";
     // Create a table element
-    const table = document.createElement('table');
+    let table = document.createElement('table');
         // Iterate over each property of the JSON object
-        for (const key in data) {
+        for (let key in data) {
             if (Object.hasOwnProperty.call(data, key)) {
               // Create a table row for the property
-              const row = document.createElement('tr');
+              let row = document.createElement('tr');
               
               // Create a table cell for the property name
-              const nameCell = document.createElement('td');
+              let nameCell = document.createElement('td');
               nameCell.textContent = key;
               
               // Create a table cell for the property value
-              const valueCell = document.createElement('td');
+              let valueCell = document.createElement('td');
               valueCell.textContent = JSON.stringify(data[key]);
               
               // Add the name and value cells to the row
@@ -141,22 +141,22 @@ function deleteData() {
     })
     .then(response => response.json())
     .then(data => {
-        const output = document.getElementById('response');
+        let output = document.getElementById('response');
         output.innerHTML = "";
         // Create a table element
-    const table = document.createElement('table');
+    let table = document.createElement('table');
     // Iterate over each property of the JSON object
-    for (const key in data) {
+    for (let key in data) {
         if (Object.hasOwnProperty.call(data, key)) {
           // Create a table row for the property
-          const row = document.createElement('tr');
+          let row = document.createElement('tr');
           
           // Create a table cell for the property name
-          const nameCell = document.createElement('td');
+          let nameCell = document.createElement('td');
           nameCell.textContent = key;
           
           // Create a table cell for the property value
-          const valueCell = document.createElement('td');
+          let valueCell = document.createElement('td');
           valueCell.textContent = JSON.stringify(data[key]);
           
           // Add the name and value cells to the row
