@@ -2,6 +2,6 @@
 ## Name: Darryl Tayag
 ## PID: A16164193
 
-## Netlify link: 
+## Netlify link: https://thunderous-creponne-bc0faa.netlify.app/
 
-## Notes:
+## Notes: Parts are linked in nav bar of website as well as in the link.md file. 
