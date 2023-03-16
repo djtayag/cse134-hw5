@@ -1,11 +1,9 @@
-Portfolio: https://incomparable-malabi-db1932.netlify.app/  
+Portfolio: https://thunderous-creponne-bc0faa.netlify.app/
 
-Part 1: https://incomparable-malabi-db1932.netlify.app/nativedialogs.html  
+Part 1: https://thunderous-creponne-bc0faa.netlify.app/methodtest.html  
 
-Part 2: https://incomparable-malabi-db1932.netlify.app/customdialogs.html  
+Part 2: https://thunderous-creponne-bc0faa.netlify.app/webcomponent.html 
 
-Part 3: https://incomparable-malabi-db1932.netlify.app/crud.html  
+Part 3 - Extra Credit: https://thunderous-creponne-bc0faa.netlify.app/extracredit.html  
 
-Part 4: https://incomparable-malabi-db1932.netlify.app/styledcrud.html  
-
-GitHub Repo: https://github.com/djtayag/cse134-hw4  
+GitHub Repo: https://github.com/djtayag/cse134-hw5  
