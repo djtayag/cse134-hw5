@@ -3,7 +3,7 @@ let currentDate = new Date();
 dateInput.value = currentDate.toString();
 
 function postData() {
-    let currentDate = new Date();
+    currentDate = new Date();
     dateInput.value = currentDate.toString();
 
     let form = document.getElementById('form');
@@ -89,7 +89,7 @@ function postData() {
   }
 
 function putData() {
-    let currentDate = new Date();
+    currentDate = new Date();
     dateInput.value = currentDate.toString();
 
     let form = document.getElementById('form');
